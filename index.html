@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fake store api</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <style>
+        img{
+            height: 200px;
+            object-fit: cover;
+        }
+
+        #c1 *{
+            margin-bottom: 40px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="pb-5 bg-body-secondary">
+
+
+        <div class="bg-success ">
+            <div class="container p-5" id="c1">
+                <h1 class="lead fw-bold fs-1 text-capitalize">welcome to our E-commerce site</h1>
+                <div class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam laudantium, recusandae pariatur explicabo sint </div>
+                <form>
+                    <input type="search" class="form-control w-50" placeholder="Search Something">
+                </form>
+            </div>
+        </div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="container mt-5">
+
+            <div class="row row-cols-3 card-group">
+
+                <div class="col " >
+                    <a href="#modal_box" class="card h-100 " index="1" onclick="fetch_data(event)" data-bs-toggle="modal">
+                        <img src="" class="card-img " id="prd_1_img">
+                        <div class="card-body">
+                            <div class="card-header mb-2" id="prd_name_1"></div>
+                            <div class="card-title" id="prd_price_1"></div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col">
+                    <a href="#modal_box" class="card h-100 " index="2" onclick="fetch_data(event)" data-bs-toggle="modal">
+                        <img src="" class="card-img  ">
+                        <div class="card-body">
+                            <div class="card-header mb-2" id="prd_name_1"></div>
+                            <div class="card-title" id="prd_price_1"></div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col">
+                    <a href="#modal_box" class="card h-100 " index="3" onclick="fetch_data(event)" data-bs-toggle="modal">
+                        <img src="" class="card-img  ">
+                        <div class="card-body">
+                            <div class="card-header mb-2" id="prd_name_1"></div>
+                            <div class="card-title" id="prd_price_1"></div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+
+            <div class="row row-cols-3  card-group mt-5 pt-2">
+
+                <div class="col " >
+                    <a href="#modal_box" class="card h-100 " index="4" onclick="fetch_data(event)" data-bs-toggle="modal">
+                        <img src="" class="card-img " id="prd_1_img">
+                        <div class="card-body">
+                            <div class="card-header mb-2" id="prd_name_1"></div>
+                            <div class="card-title" id="prd_price_1"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#modal_box" class="card h-100 " index="5" onclick="fetch_data(event)" data-bs-toggle="modal">
+                        <img src="" class="card-img  ">
+                        <div class="card-body">
+                            <div class="card-header mb-2" id="prd_name_1"></div>
+                            <div class="card-title" id="prd_price_1"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#modal_box" class="card h-100 " index="6" onclick="fetch_data(event)" data-bs-toggle="modal">
+                        <img src="" class="card-img  ">
+                        <div class="card-body">
+                            <div class="card-header mb-2" id="prd_name_1"></div>
+                            <div class="card-title" id="prd_price_1"></div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="modal" data-bs-backdrop="static" id="modal_box">
+                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title fw-bold h1 text-capitalize"></div>
+                            <div class="btn btn-danger" data-bs-dismiss="modal">close</div>
+                        </div>
+
+                        <div class="modal-body ">
+                            <div class=" container row mx-auto">
+                                <div class="col col-12 col-md-6">
+                                    <div>
+                                        <img src="" class="img-fluid" id="con_thumbnail">
+                                    </div>
+                                </div>
+                    
+                                <div class="col col-12 col-md-6">
+                                    <div class="">
+                                        <div class="modal-title" class="my-4"></div>
+                                        <div id="con_price"></div>
+                                        <div id="con_description" class="bg-info-subtle p-4 mt-4 rounded-4"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    Sample images
+                                    <div class="row mt-5">
+                                        <div class="col border2"><img src="" class="img-fluid con_img"></div>
+                                        <div class="col border2"><img src="" class="img-fluid con_img"></div>
+                                    </div>
+                                </div>
+
+                            </div>                    
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                    
+    
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
+
